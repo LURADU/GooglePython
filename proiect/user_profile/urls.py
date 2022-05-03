@@ -1,10 +1,11 @@
-from django import views
 from django.urls import path
 
+from user_profile import views
 
-app_name = 'profile'
+app_name = 'userprofile'
 
 urlpatterns = [
-    path('', ),
+    path('start_timesheet/',views.new_timesheet, name= 'start_pontaj'),
+    path('stop_timesheet/', views.stop_timesheet, name='stop_pontaj'),
 
 ]

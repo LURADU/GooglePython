@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aplicatie1',
     'aplicatie2',
-
+    'user_profile',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'proiect.context_processors.is_ready_to_work',
             ],
         },
     },
