@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'aplicatie1',
     'aplicatie2',
     'user_profile',
+    'rest_framework',
+    'myapi',
+    'aplicatia3',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +135,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = '/locations/'
 LOGOUT_REDIRECT_URL = '/'
+APPEND_SLASH = False

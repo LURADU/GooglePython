@@ -10,4 +10,6 @@ urlpatterns = [
     path('<int:pk>/update/', views.UpdateLocationView.as_view(), name='modifica'),
     path('<int:pk>/stergere/', views.delete_location, name='sterge'),
     path('<int:pk>/activeaza/', views.activate_location, name='activeaza'),
+
+    path('ajax/load-cities/', views.load_cities, name='ajax_load_cities'),
 ]
